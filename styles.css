@@ -1,0 +1,114 @@
+/* General body styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f7f7; /* Light grey background */
+  color: #222222;       /* Dark grey text */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+header {
+  background: #800000;  /* Premium Maroon */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+/* Navigation Links */
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section blocks */
+section {
+  padding: 20px;
+  margin: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2, h3 {
+  color: #800000; /* Maroon headlines */
+}
+
+/* Course Gallery Grid */
+.course-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+}
+
+/* Individual Course Card */
+.course-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Course Images */
+.course-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Enquire Button */
+.course-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  background: #800000;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.course-card a:hover {
+  background: #5c0000;
+}
+
+/* Mentor Image */
+.mentor-pic {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222222; /* Dark grey footer */
+  color: white;
+  font-size: 14px;
+}
