@@ -1,0 +1,165 @@
+/* General Body and Typography */
+body {
+    font-family: 'Poppins', sans-serif; /* Using Google Font */
+    line-height: 1.6;
+    color: #333;
+    padding-top: 60px; /* To prevent content from being hidden behind fixed header */
+    background-color: #f8f9fa; /* Light background for overall site */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700; /* Bold headings */
+    color: #212529; /* Darker heading color */
+}
+
+.text-primary {
+    color: #007bff !important; /* Bootstrap primary color, can be customized */
+}
+
+/* Header Specifics */
+header {
+    border-bottom: 3px solid #007bff; /* A subtle border under the header */
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+.animate-link {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+}
+
+.animate-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007bff; /* Underline color */
+    transition: width 0.3s ease-out;
+}
+
+.animate-link:hover {
+    color: #007bff !important; /* Change color on hover */
+}
+
+.animate-link:hover::after {
+    width: 100%;
+}
+
+/* Introduction Section (Hero) */
+.min-vh-100 {
+    min-height: calc(100vh - 60px); /* Adjust for header height */
+}
+
+.hero-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* You can replace this with a dynamic background image or video */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?entrepreneurship,marketing') no-repeat center center/cover;
+    background-attachment: fixed; /* Parallax effect */
+    z-index: 0;
+}
+
+#home .container {
+    position: relative;
+    z-index: 1; /* Ensure text is above overlay */
+    color: #fff; /* White text on dark background */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* For better readability */
+}
+
+/* Courses Section */
+.course-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px; /* Slightly rounded corners */
+}
+
+.course-card:hover {
+    transform: translateY(-5px); /* Lift up effect */
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; /* More pronounced shadow */
+}
+
+.course-card .card-title i {
+    color: #28a745; /* Icon color, can be customized */
+}
+
+/* Added style for the course images */
+.course-img-thumbnail {
+    width: 100%; /* Make image take full width of card */
+    height: 200px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Cover the area, cropping if necessary */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.animate-btn {
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.animate-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.02); /* Slight scale for button */
+}
+
+/* About Mentor Section */
+#mentor .mentor-pic {
+    border: 5px solid #007bff; /* Border around mentor's picture */
+}
+
+#mentor a {
+    transition: color 0.3s ease-in-out;
+}
+
+#mentor a:hover {
+    color: #007bff !important; /* Primary color on hover */
+}
+
+/* Customer Review Section */
+#reviews .carousel-item {
+    padding: 2rem 0;
+}
+
+#reviews .carousel-control-prev,
+#reviews .carousel-control-next {
+    width: 5%; /* Make controls smaller */
+    color: #007bff; /* Change arrow color */
+}
+#reviews .carousel-control-prev-icon,
+#reviews .carousel-control-next-icon {
+    filter: invert(1); /* Makes the default black icons white, adjust if your theme differs */
+}
+
+
+#reviews .bi-star-fill {
+    font-size: 1.2rem; /* Size of star icons */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    body {
+        padding-top: 56px; /* Adjust for smaller header on mobile */
+    }
+
+    #home .display-4 {
+        font-size: 2.5rem;
+    }
+
+    #home .lead {
+        font-size: 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}6
